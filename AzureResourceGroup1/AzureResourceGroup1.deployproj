@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>e829cd46-59d9-4781-bf3c-87158b2ba27b</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworkIdentifier>Deployment</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>1.0</TargetFrameworkVersion>
+    <PrepareForBuildDependsOn>
+    </PrepareForBuildDependsOn>
+  </PropertyGroup>
+  <Import Condition=" Exists('Deployment.targets') " Project="Deployment.targets" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- vertag<:>start tokens<:>maj.min -->
+  <Import Condition=" Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Deployment\1.1\DeploymentProject.targets') " Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Deployment\1.1\DeploymentProject.targets" />
+  <!-- vertag<:>end -->
+  <ItemGroup>
+    <Content Include="azuredeploy.json" />
+    <Content Include="azuredeploy.parameters.json" />
+    <None Include="Backup\azuredeploy.json" />
+    <None Include="Backup\azuredeploy.parameters.json" />
+    <None Include="Backup\metadata.json" />
+    <None Include="Backup\README.md" />
+    <None Include="Deployment.targets">
+      <Visible>False</Visible>
+    </None>
+    <Content Include="Deploy-AzureResourceGroup.ps1" />
+    <None Include="Sanjeev\Deployment.targets" />
+    <None Include="Sanjeev\SanjeevTest.deployproj" />
+    <None Include="Sanjeev\Scripts\Deploy-AzureResourceGroup.ps1" />
+    <None Include="Sanjeev\Templates\azuredeploy.json" />
+    <None Include="Sanjeev\Templates\azuredeploy.parameters.json" />
+    <None Include="Sanjeev\Templates\LinkedTemplates\azuredeploy-db.json" />
+    <None Include="Sanjeev\Templates\LinkedTemplates\azuredeploy-db.parameters.json" />
+    <None Include="Sanjeev\Templates\LinkedTemplates\azuredeploy-web.json" />
+    <None Include="Sanjeev\Templates\LinkedTemplates\azuredeploy-web.parameters.json" />
+    <None Include="Sanjeev\Templates\LinkedTemplates\azuredeploy.json" />
+    <None Include="Sanjeev\Templates\LinkedTemplates\azuredeploy.parameters.json" />
+    <None Include="Sanjeev\Templates\LinkedTemplates\README.md" />
+    <None Include="Sanjeev\Templates\metadata.json" />
+    <None Include="Sanjeev\Templates\README.md" />
+    <None Include="Sanjeev\Templates\TechCoffeeLab.json" />
+    <None Include="Sanjeev\Templates\TechCoffeeLab.param.json" />
+    <None Include="Sanjeev\Templates\WindowsVirtualMachine.json" />
+    <None Include="Sanjeev\Templates\WindowsVirtualMachine.parameters.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sanjeev\bin\Debug\" />
+    <Folder Include="Sanjeev\obj\Debug\" />
+  </ItemGroup>
+  <Target Name="GetReferenceAssemblyPaths" />
+</Project>
