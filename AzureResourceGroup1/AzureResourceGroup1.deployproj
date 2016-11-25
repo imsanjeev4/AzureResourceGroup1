@@ -35,6 +35,10 @@
       <Visible>False</Visible>
     </None>
     <Content Include="Deploy-AzureResourceGroup.ps1" />
+    <None Include="NewBackup\azuredeploy.json" />
+    <None Include="NewBackup\azuredeploy.parameters.json" />
+    <None Include="NewBackup\metadata.json" />
+    <None Include="NewBackup\README.md" />
     <None Include="Sanjeev\Deployment.targets" />
     <None Include="Sanjeev\SanjeevTest.deployproj" />
     <None Include="Sanjeev\Scripts\Deploy-AzureResourceGroup.ps1" />

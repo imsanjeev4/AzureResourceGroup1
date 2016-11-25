@@ -4,10 +4,8 @@
   "parameters": {
     "VirtualMacineName": {
       "type": "string",
-      "defaultValue": "VMforBackup",
       "metadata": {
         "description": "Virtual machine name that is to be bachedup"
-
       }
     },
     "vaultName": {
