@@ -2,16 +2,17 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
   "parameters": {
-    "virtualMacine": {
-      "type": "string",
-      "metadata": {
-        "description": "Virtual machine name that is to be backup"
-      }
-    },
+
     "vaultName": {
       "type": "string",
       "metadata": {
         "description": "Name of the Recovery Services Vault"
+      }
+    },
+    "virtualMacine": {
+      "type": "string",
+      "metadata": {
+        "description": "Virtual machine name that is to be backup"
       }
     },
     "policyName": {
