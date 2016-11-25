@@ -4,6 +4,7 @@
   "parameters": {
     "VirtualMacineName": {
       "value": ""
+
     },
     "vaultName": {
       "value": "RSvault1"
