@@ -3,13 +3,28 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "vaultName": {
-      "value": "RSvault1"
+      "value": "DevVault09"
     },
-    "virtualMacine": {
-      "value": "VMforBackup"
+    "existingProtectionContainers": {
+      "value": [
+        //"iaasvmcontainer;iaasvmcontainerv2;HmaOnAzurePOC-Dev;DevVM01",
+        "iaasvmcontainer;iaasvmcontainerv2;HmaOnAzurePOC-Dev;DevVM04"
+      ]
+    },
+    "existingProtectableItems": {
+      "value": [
+        //"vm;iaasvmcontainerv2;HmaOnAzurePOC-Dev;DevVM01",
+        "vm;iaasvmcontainerv2;HmaOnAzurePOC-Dev;DevVM04"
+      ]
+    },
+    "existingSourceResourceIds": {
+      "value": [
+        //"/subscriptions/63bb76f1-828b-4a86-8d02-89d0c75c56f2/resourceGroups/HmaOnAzurePOC-Dev/providers/Microsoft.Compute/virtualMachines/DevVM01",
+        "/subscriptions/63bb76f1-828b-4a86-8d02-89d0c75c56f2/resourceGroups/HmaOnAzurePOC-Dev/providers/Microsoft.Compute/virtualMachines/DevVM04"
+      ]
     },
     "policyName": {
-      "value": "WeeklyBackupPolicy1"
+      "value": "DevBackupPolicy"
     },
     "scheduleRunDays": {
       "value": [ "Sunday", "Tuesday", "Thursday" ]
@@ -42,4 +57,5 @@
       "value": 10
     }
   }
+ 
 }

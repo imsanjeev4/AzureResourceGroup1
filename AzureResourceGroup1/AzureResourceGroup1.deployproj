@@ -39,6 +39,14 @@
     <None Include="NewBackup\azuredeploy.parameters.json" />
     <None Include="NewBackup\metadata.json" />
     <None Include="NewBackup\README.md" />
+    <None Include="RSVaultAutomate\bin\Debug\staging\RSVaultAutomate\Scripts\Deploy-AzureResourceGroup.ps1" />
+    <None Include="RSVaultAutomate\Deployment.targets" />
+    <None Include="RSVaultAutomate\RSVaultAutomate.deployproj" />
+    <None Include="RSVaultAutomate\Scripts\Deploy-AzureResourceGroup.ps1" />
+    <None Include="RSVaultAutomate\Templates\azuredeploy.json" />
+    <None Include="RSVaultAutomate\Templates\azuredeploy.parameters.json" />
+    <None Include="RSVaultAutomate\Templates\metadata.json" />
+    <None Include="RSVaultAutomate\Templates\README.md" />
     <None Include="Sanjeev\Deployment.targets" />
     <None Include="Sanjeev\SanjeevTest.deployproj" />
     <None Include="Sanjeev\Scripts\Deploy-AzureResourceGroup.ps1" />
@@ -59,6 +67,7 @@
     <None Include="Sanjeev\Templates\WindowsVirtualMachine.parameters.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="RSVaultAutomate\obj\Debug\" />
     <Folder Include="Sanjeev\bin\Debug\" />
     <Folder Include="Sanjeev\obj\Debug\" />
   </ItemGroup>
