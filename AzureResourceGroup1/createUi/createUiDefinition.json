@@ -27,6 +27,7 @@
         "preValidation": "Configure the infrastructure settings",
         "postValidation": "Done"
       },
+
       "bladeTitle": "Infrastructure settings",
       "elements": [{
         "name": "VmCount",
