@@ -20,7 +20,8 @@
     "existingSourceResourceIds": {
       "value": [
         //"/subscriptions/63bb76f1-828b-4a86-8d02-89d0c75c56f2/resourceGroups/HmaOnAzurePOC-Dev/providers/Microsoft.Compute/virtualMachines/DevVM01",
-        "/subscriptions/63bb76f1-828b-4a86-8d02-89d0c75c56f2/resourceGroups/HmaOnAzurePOC-Dev/providers/Microsoft.Compute/virtualMachines/DevVM04"
+        //"/subscriptions/63bb76f1-828b-4a86-8d02-89d0c75c56f2/resourceGroups/HmaOnAzurePOC-Dev/providers/Microsoft.Compute/virtualMachines/DevVM04"
+        [ "resourceId('Microsoft.Compute/virtualMachines/DevVM04'", "parameters('DevVM04'))" ]
       ]
     },
     "policyName": {
