@@ -8,7 +8,7 @@
         "type": "Microsoft.Compute.UserNameTextBox",
         "label": "Username",
         "toolTip": "please enter username.",
-        "osPlatform": "Linux",
+        //"osPlatform": "Linux",
         "constraints": {
           "required": true,
           "regex": "^[a-z][-a-z0-9]*$"
