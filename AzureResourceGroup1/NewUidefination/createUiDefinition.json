@@ -19,7 +19,7 @@
         "type": "Microsoft.Compute.UserNameTextBox",
         "label": "VM username",
         "toolTip": "Administrative username for the virtual machines.",
-        "osPlatform": "Linux",
+        //"osPlatform": "Linux",
         "constraints": {
           "required": true,
           "regex": "^[a-z][-a-z0-9]*$"
