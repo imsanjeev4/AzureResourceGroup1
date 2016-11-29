@@ -116,7 +116,7 @@
       },
       {
         "name": "deploymentDetails",
-        "label": "Deployment Parameters",
+        "label": "Services",
         "subLabel": {
           "preValidation": "Required",
           "postValidation": "Done"
