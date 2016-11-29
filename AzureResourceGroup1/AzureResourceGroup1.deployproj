@@ -43,7 +43,9 @@
     <None Include="NewBackup\metadata.json" />
     <None Include="NewBackup\README.md" />
     <None Include="NewUidefination\createUiDefinition.json" />
+    <None Include="NewUidefination\createUiDefinition1.json" />
     <None Include="NewUidefination\mainTemplate.json" />
+    <None Include="NewUidefination\mainTemplate1.json" />
     <None Include="NewUidefination\README.md" />
     <None Include="RSVaultAutomate\bin\Debug\staging\RSVaultAutomate\Scripts\Deploy-AzureResourceGroup.ps1" />
     <None Include="RSVaultAutomate\Deployment.targets" />
