@@ -8,7 +8,11 @@
         "type": "Microsoft.Compute.UserNameTextBox",
         "label": "Username",
         "toolTip": "Please Enter Username.",
-        "defaultValue": "Starter"
+        "defaultValue": "Starter",
+        "constraints": {
+          "required": true,
+          "regex": "^[a-z][-a-z0-9]*$"
+        }
       },
       {
         "name": "adminUsername",
