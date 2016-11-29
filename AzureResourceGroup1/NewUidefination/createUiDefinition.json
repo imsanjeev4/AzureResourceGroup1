@@ -93,7 +93,7 @@
       },
       {
         //"name": "Vault/Backup",
-        "label": "Vault/Backup",
+        //"label": "Vault/Backup",
         "subLabel": {
           "preValidation": "Required",
           "postValidation": "Done"
