@@ -95,10 +95,10 @@
         "name": "Vault/Backup",
         "label": "Vault/Backup",
         "subLabel": {
-          "preValidation": "Vault/Backup Policy",
+          "preValidation": "Required",
           "postValidation": "Done"
         },
-        "bladeTitle": "Vault/Backup",
+        "bladeTitle": "Vault/Backup Policy",
         "elements": [
           {
             "name": "jenkinsAdminPassword",
@@ -121,7 +121,7 @@
           "preValidation": "Required",
           "postValidation": "Done"
         },
-        "bladeTitle": "Deployment Parameters",
+        "bladeTitle": "Services",
         "elements": [
           {
             "name": "publicIP",
