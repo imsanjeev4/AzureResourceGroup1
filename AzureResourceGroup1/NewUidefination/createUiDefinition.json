@@ -67,7 +67,7 @@
         "name": "size",
         "label": "Size",
         "subLabel": {
-          "preValidation": "Choose virtual machine size",
+          "preValidation": "Select VM Information",
           "postValidation": "Done"
         },
         "bladeTitle": "Size",
