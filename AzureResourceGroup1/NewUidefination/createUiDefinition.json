@@ -4,7 +4,7 @@
   "parameters": {
     "basics": [
       {
-        "name": "Username",
+        "name": "username",
         "type": "Microsoft.Compute.UserNameTextBox",
         "label": "Username",
         "toolTip": "Please Enter Username.",
