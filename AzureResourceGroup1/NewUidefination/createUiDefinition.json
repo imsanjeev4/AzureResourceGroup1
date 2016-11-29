@@ -5,7 +5,7 @@
     "basics": [
       {
         "name": "size",
-        "type": "Microsoft.Common.DropDown",
+        "type": "Microsoft.Compute.UserNameTextBox",
         "label": "Username",
         "defaultValue": "Starter",
         "constraints": {
