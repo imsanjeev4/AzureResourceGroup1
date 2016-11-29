@@ -4,11 +4,11 @@
   "parameters": {
     "basics": [
       {
-        "name": "adminUsername",
+        "name": "Username",
         "type": "Microsoft.Compute.UserNameTextBox",
-        "label": "VM username",
-        "toolTip": "Administrative username for the virtual machines.",
-        "osPlatform": "Linux",
+        "label": "Username",
+        "toolTip": "please enter username.",
+        //"osPlatform": "Linux",
         "constraints": {
           "required": true,
           "regex": "^[a-z][-a-z0-9]*$"
