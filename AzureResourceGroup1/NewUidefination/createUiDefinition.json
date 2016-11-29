@@ -65,12 +65,12 @@
     "steps": [
       {
         "name": "VM",
-        "label": "Size",
+        "label": "",
         "subLabel": {
           "preValidation": "Select VM Information",
           "postValidation": "Done"
         },
-        "bladeTitle": "Size",
+        "bladeTitle": "",
         "elements": [
           {
             "name": "vmSize",
