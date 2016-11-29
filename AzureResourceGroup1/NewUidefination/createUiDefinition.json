@@ -6,7 +6,7 @@
       {
         "name": "size",
         "type": "Microsoft.Common.DropDown",
-        "label": "Deployment size",
+        "label": "Username",
         "defaultValue": "Starter",
         "constraints": {
           "allowedValues": [
