@@ -4,14 +4,33 @@
   "parameters": {
     "basics": [
       {
-        "name": "Username",
-        "type": "Microsoft.Compute.UserNameTextBox",
-        "label": "Username",
-        "toolTip": "Please Enter Username.",
+        "name": "size",
+        "type": "Microsoft.Common.DropDown",
+        "label": "Deployment size",
         "defaultValue": "Starter",
         "constraints": {
-          "required": true,
-          "regex": "^[a-z][-a-z0-9]*$"
+          "allowedValues": [
+            {
+              "label": "Solo (1 master, 1 executor : $0.25/hr + VM cost)",
+              "value": "Solo"
+            },
+            {
+              "label": "Project (1 masters, 5 executors : $1.00/hr + VM cost)",
+              "value": "Project"
+            },
+            {
+              "label": "Team (2 masters, 10 executors : $2.35/hr + VM cost)",
+              "value": "Team"
+            },
+            {
+              "label": "Workgroup (5 masters, 25 executors : $5.54/hr + VM cost)",
+              "value": "Workgroup"
+            },
+            {
+              "label": "Pro (10 masters, 100 executors : $12.47/hr + VM cost)",
+              "value": "Pro"
+            }
+          ]
         }
       },
       {
@@ -19,7 +38,7 @@
         "type": "Microsoft.Compute.UserNameTextBox",
         "label": "VM username",
         "toolTip": "Administrative username for the virtual machines.",
-        //"osPlatform": "Linux",
+        "osPlatform": "Linux",
         "constraints": {
           "required": true,
           "regex": "^[a-z][-a-z0-9]*$"
