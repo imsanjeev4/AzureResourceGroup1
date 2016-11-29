@@ -64,7 +64,7 @@
     ],
     "steps": [
       {
-        "name": "size",
+        "name": "VM",
         "label": "Size",
         "subLabel": {
           "preValidation": "Select VM Information",
@@ -92,13 +92,13 @@
         ]
       },
       {
-        "name": "security",
-        "label": "Security",
+        "name": "Vault/Backup",
+        "label": "Vault/Backup",
         "subLabel": {
           "preValidation": "Vault/Backup Policy",
           "postValidation": "Done"
         },
-        "bladeTitle": "Security",
+        "bladeTitle": "Vault/Backup",
         "elements": [
           {
             "name": "jenkinsAdminPassword",
