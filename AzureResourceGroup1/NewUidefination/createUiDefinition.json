@@ -5,7 +5,7 @@
     "basics": [
       {
         "name": "Username",
-        "type": "Microsoft.Compute.UserNameTextBox.",
+        "type": "Microsoft.Compute.UserNameTextBox..",
         "label": "Username",
         "toolTip": "please enter username.",
         //"osPlatform": "Linux",
