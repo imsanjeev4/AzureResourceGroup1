@@ -92,10 +92,10 @@
         ]
       },
       {
-        //"name": "Vault/Backup",
-        //"label": "Vault/Backup",
+        "name": "Vault/Backup",
+        "label": "Vault/Backup",
         "subLabel": {
-          "preValidation": "Required",
+          "preValidation": "Vault/Backup Policy",
           "postValidation": "Done"
         },
         "bladeTitle": "Vault/Backup Policy",
