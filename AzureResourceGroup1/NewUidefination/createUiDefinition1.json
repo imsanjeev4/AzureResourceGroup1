@@ -16,17 +16,7 @@
         }
       },
 
-      {
-        "name": "Username1",
-        "type": "Microsoft.Compute.UserNameTextBox",
-        "label": "Username1",
-        "toolTip": "please Enter username1.",
-        //"osPlatform": "Linux",
-        "constraints": {
-          "required": true,
-          "regex": "^[a-z][-a-z0-9]*$"
-        }
-      },
+    
       {
         "name": "adminCredentials",
         "type": "Microsoft.Compute.CredentialsCombo",
