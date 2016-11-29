@@ -95,7 +95,7 @@
         "name": "security",
         "label": "Security",
         "subLabel": {
-          "preValidation": "Required",
+          "preValidation": "Vault/Backup Policy",
           "postValidation": "Done"
         },
         "bladeTitle": "Security",
