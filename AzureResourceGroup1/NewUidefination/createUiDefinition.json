@@ -5,8 +5,8 @@
     "basics": [
       {
         "name": "size",
-        "type": "Microsoft.Compute.UserNameTextBox",
-        "label": "Username",
+        "type": "Microsoft.Common.DropDown",
+        "label": "Deployment size",
         "defaultValue": "Starter",
         "constraints": {
           "allowedValues": [
