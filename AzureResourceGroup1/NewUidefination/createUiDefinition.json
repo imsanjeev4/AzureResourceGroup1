@@ -82,7 +82,7 @@
           },
           {
             "name": "Subscription",
-            "type": "Microsoft.Common.Combo",
+            "type": "Microsoft.Common.DropDown",
             "label": "Subscription",
             "toolTip": "please Select Value.",
             "constraints": {
