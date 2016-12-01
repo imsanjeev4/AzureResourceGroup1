@@ -72,9 +72,9 @@
         },
         "bladeTitle": "",
         "elements": [
-          {
+           {
             "name": "vmInformation",
-            "type": "Microsoft.Compute.UserNameTextBox",
+            "type": "Microsoft.Common.TextBox",
             "label": {
               "password": "Jenkins administrator password",
               "confirmPassword": "Confirm password"
@@ -180,7 +180,7 @@
       "size": "[basics('size')]",
       "vmSize": "[steps('size').vmSize]",
       "jenkinsAdminPassword": "[steps('security').jenkinsAdminPassword]",
-      "vmInformation": "[steps('security').vmInformation]",
+      "vmInformation": "[steps('VM').vmInformation]",
       "location": "[location()]"
     }
   }
