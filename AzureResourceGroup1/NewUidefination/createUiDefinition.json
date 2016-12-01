@@ -72,8 +72,9 @@
         },
         "bladeTitle": "",
         "elements": [
-           {
-            "name": "jenkinsAdminPassword",
+          {
+            //"name": "jenkinsAdminPassword",
+            "name": "vmInformation",
             "type": "Microsoft.Common.PasswordBox",
             "label": {
               "password": "Jenkins administrator password",
@@ -169,8 +170,8 @@
       "storageAccountType": "[steps('deploymentDetails').storageAccount.type]",
 
       "publicIPNewOrExisting": "[steps('deploymentDetails').publicIP.newOrExistingOrNone]",
-      "publicIPName" : "[steps('deploymentDetails').publicIP.name]",
-      "dnsNameForPublicIP" : "[steps('deploymentDetails').publicIP.domainNameLabel]",
+      "publicIPName": "[steps('deploymentDetails').publicIP.name]",
+      "dnsNameForPublicIP": "[steps('deploymentDetails').publicIP.domainNameLabel]",
 
       "adminUsername": "[basics('adminUsername')]",
       "authenticationType": "[basics('adminCredentials').authenticationType]",
@@ -179,8 +180,8 @@
 
       "size": "[basics('size')]",
       "vmSize": "[steps('size').vmSize]",
-      "jenkinsAdminPassword" : "[steps('security').jenkinsAdminPassword]",
-
+      "jenkinsAdminPassword": "[steps('security').jenkinsAdminPassword]",
+      "vmInformation": "[steps('security').vmInformation]",
       "location": "[location()]"
     }
   }

@@ -77,10 +77,17 @@
       }
     },
     "jenkinsAdminPassword": {
-      "type": "securestring",
+      "type": "string",
       "defaultValue": "",
       "metadata": {
         "description": "Password for the 'admin' user on jenkins initial security setup."
+      }
+    },
+    "vmInformation": {
+      "type": "securestring",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Enter Username."
       }
     },
     "vmSize": {
@@ -101,7 +108,7 @@
         "Pro"
       ],
       "metadata": {
-          "description": "Size of your CloudBees Jenkins Platform deployment."
+        "description": "Size of your CloudBees Jenkins Platform deployment."
       }
     }
   },
@@ -541,7 +548,7 @@
             "typeHandlerVersion": "1.4",
             "settings": {
               "fileUris": [ "[concat(parameters('templateBaseUrl'), '/setup-operations-center.sh')]" ],
-              "commandToExecute": "[concat('bash setup-operations-center.sh ', variables('mastersCount'), ' ', variables('FQdns'), ' ', base64(parameters('jenkinsAdminPassword')), ' ', parameters('templateBaseUrl'), ' ', variables('subscription'), ' ', parameters('size'))]"
+              "commandToExecute": "[concat('bash setup-operations-center.sh ', variables('mastersCount'), ' ', variables('FQdns'), ' ', base64(parameters('vmInformation')), base64(parameters('jenkinsAdminPassword')), ' ', parameters('templateBaseUrl'), ' ', variables('subscription'), ' ', parameters('size'))]"
             }
           }
         }
