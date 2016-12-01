@@ -65,11 +65,11 @@
     "steps": [
       {
         "name": "VM",
-         "subLabel": {
+        "subLabel": {
           "preValidation": "Select VM Information",
           "postValidation": "Done"
         },
-        "bladeTitle": "Test",
+        "bladeTitle": "vmInformation",
         "elements": [
           {
             "name": "vmInformation",
@@ -77,16 +77,16 @@
             "label": "VM Informayion",
             "toolTip": "Password for the 'admin' user on Jenkins for initial security setup.",
             "constraints": {
-              "required": true
+              "required": false
             }
           },
           {
-            "name": "vmInformation2",
-            "type": "Microsoft.Common.TextBox",
-            "label": "VM Informayion2",
-            "toolTip": "Password for the 'admin' user on Jenkins for initial security setup.",
+            "name": "Subscription",
+            "type": "Microsoft.Common.Combo",
+            "label": "Subscription",
+            "toolTip": "please Select Value.",
             "constraints": {
-              "required": true
+              "required": false
             }
           }
         ]
