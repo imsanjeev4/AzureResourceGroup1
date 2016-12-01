@@ -77,17 +77,17 @@
       }
     },
     "jenkinsAdminPassword": {
-      "type": "string",
+      "type": "securestring",
       "defaultValue": "",
       "metadata": {
         "description": "Password for the 'admin' user on jenkins initial security setup."
       }
     },
     "vmInformation": {
-      "type": "securestring",
+      "type": "string",
       "defaultValue": "",
       "metadata": {
-        "description": "Enter Username."
+        "description": "Password for the 'admin' user on jenkins initial security setup."
       }
     },
     "vmSize": {
