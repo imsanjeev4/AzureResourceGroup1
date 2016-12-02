@@ -70,7 +70,7 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
+              "regex": "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$",
               "validationMessage": "Enter Email In Proper Format."
             }
           },
@@ -83,7 +83,7 @@
             "constraints": {
               "required": false,
               "regex": "^[0-9-]{1,61}[0-9]$",
-              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+              "validationMessage": "Please enter only integer number between [0-9]."
             }
           },
           {
@@ -142,8 +142,8 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
-              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+              "regex": "^[0-9-]{1,61}[0-9]$",
+              "validationMessage": "Please enter only integer number between [0-9]."
             }
           },
           {
