@@ -10,7 +10,7 @@
         "toolTip": "Enter Existing VM Name For Backup.",
         "osPlatform": "Windows",
         "constraints": {
-          "required": false,
+          "required": true,
           "regex": "^[a-z][-a-z0-9]*$"
         }
       }
@@ -136,7 +136,7 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "validationMessage": "Please Enter Your Country Name."
+              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
           },
           {
@@ -171,7 +171,7 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^[0-9-]{1,9}[0-9]$",
+              "regex": "^[0-9-]{1,61}[0-9]$",
               "validationMessage": "Please enter only integer number between [0-9]."
             }
           },
@@ -188,34 +188,14 @@
         ]
       },
       {
-        "name": "HMAServices",
-        "label": "test",
+        "name": "HMA Services",
+        "label": "HMA Services",
         "subLabel": {
           "preValidation": "HMA Services",
           "postValidation": "Done"
         },
         "bladeTitle": "HMA Services",
         "elements": [
-          {
-            "name": "Backup",
-            "type": "Microsoft.Common.DropDown",
-            "label": "Backup",
-            "toolTip": "",
-
-            "defaultValue": "Yes",
-            "constraints": {
-              "allowedValues": [
-                {
-                  "label": "Yes",
-                  "value": "Yes"
-                },
-                {
-                  "label": "No",
-                  "value": "No"
-                }
-              ]
-            }
-          },
           {
             "name": "Vault",
             "type": "Microsoft.Common.TextBox",
@@ -276,8 +256,27 @@
                 }
               ]
             }
-          }
+          },
+          {
+            "name": "Backup",
+            "type": "Microsoft.Common.DropDown",
+            "label": "Backup",
+            "toolTip": "",
 
+            "defaultValue": "Yes",
+            "constraints": {
+              "allowedValues": [
+                {
+                  "label": "Yes",
+                  "value": "Yes"
+                },
+                {
+                  "label": "No",
+                  "value": "No"
+                }
+              ]
+            }
+          }
         ]
       }
 
