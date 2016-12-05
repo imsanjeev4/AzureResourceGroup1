@@ -45,7 +45,7 @@
             "toolTip": "Enter Company Full Name. Ex. Hanusoftware Solutions (P). Ltd.",
             "defaultValue": "",
             "constraints": {
-              "required": false,
+              "required": true,
               "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
@@ -57,7 +57,7 @@
             "toolTip": "Enter your website full URL that is accessible",
             "defaultValue": "",
             "constraints": {
-              "required": false,
+              "required": true,
               "regex": "^http(s)?://([\\w-]+.)+[\\w-]+(/[\\w- ./?%&=])?$",
               "validationMessage": "Enter Website In Proper Format"
             }
@@ -69,7 +69,7 @@
             "toolTip": "Enter Your Email Address.",
             "defaultValue": "",
             "constraints": {
-              "required": false,
+              "required": true,
               "regex": "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$",
               "validationMessage": "Enter Email In Proper Format."
             }
@@ -81,8 +81,20 @@
             "toolTip": "Enter Your Contact Number.",
             "defaultValue": "",
             "constraints": {
-              "required": false,
-              "regex": "^[0-9-]{1,10}[0-9]$",
+              "required": true,
+              "regex": "^[0-9-]{1,9}[0-9]$",
+              "validationMessage": "Please enter only integer number between [0-9]."
+            }
+          },
+          {
+            "name": "Alternate Contact No",
+            "type": "Microsoft.Common.TextBox",
+            "label": "Contact Number",
+            "toolTip": "Enter Your Alternate Contact Number.",
+            "defaultValue": "",
+            "constraints": {
+              "required": true,
+              "regex": "^[0-9-]{1,9}[0-9]$",
               "validationMessage": "Please enter only integer number between [0-9]."
             }
           },
@@ -102,7 +114,7 @@
             "type": "Microsoft.Common.DropDown",
             "label": "Country",
             "toolTip": "Please Select your Country name.",
-            "defaultValue": "",
+            "defaultValue": "Please Select Your Country",
             "constraints": {
               "allowedValues": [
                 {
@@ -124,8 +136,7 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
-              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+              "validationMessage": "Please Enter Your Country Name."
             }
           },
           {
