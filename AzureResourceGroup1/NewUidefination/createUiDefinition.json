@@ -7,7 +7,7 @@
         "name": "VMName",
         "type": "Microsoft.Common.TextBox",
         "label": "Virtual Machine Name",
-        "toolTip": "Enter Existing VM Name For Backup.",
+        "toolTip": "Enter Existing VM Name.",
         "osPlatform": "Windows",
         "constraints": {
           "required": true,
@@ -21,7 +21,7 @@
         "name": "Customer",
         "label": "Customer",
         "subLabel": {
-          "preValidation": "Customer Details",
+          "preValidation": "Enter Customer Information",
           "postValidation": "Done"
         },
         "bladeTitle": "Customer",
@@ -30,7 +30,7 @@
             "name": "CustomerName",
             "type": "Microsoft.Common.TextBox",
             "label": "Customer Name",
-            "toolTip": "Enter Customer Full Name.",
+            "toolTip": "Enter Customer Full Name. Ex. Vikram Pal Singh",
             "defaultValue": "",
             "constraints": {
               "required": false,
@@ -45,7 +45,7 @@
             "toolTip": "Enter Company Full Name. Ex. Hanusoftware Solutions (P). Ltd.",
             "defaultValue": "",
             "constraints": {
-              "required": true,
+              "required": false,
               "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
@@ -57,7 +57,7 @@
             "toolTip": "Enter your website full URL that is accessible",
             "defaultValue": "",
             "constraints": {
-              "required": true,
+              "required": false,
               "regex": "^http(s)?://([\\w-]+.)+[\\w-]+(/[\\w- ./?%&=])?$",
               "validationMessage": "Enter Website In Proper Format"
             }
@@ -69,7 +69,7 @@
             "toolTip": "Enter Your Email Address.",
             "defaultValue": "",
             "constraints": {
-              "required": true,
+              "required": false,
               "regex": "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$",
               "validationMessage": "Enter Email In Proper Format."
             }
@@ -81,20 +81,8 @@
             "toolTip": "Enter Your Contact Number.",
             "defaultValue": "",
             "constraints": {
-              "required": true,
-              "regex": "^[0-9-]{1,9}[0-9]$",
-              "validationMessage": "Please enter only integer number between [0-9]."
-            }
-          },
-          {
-            "name": "Alternate Contact No",
-            "type": "Microsoft.Common.TextBox",
-            "label": "Contact Number",
-            "toolTip": "Enter Your Alternate Contact Number.",
-            "defaultValue": "",
-            "constraints": {
-              "required": true,
-              "regex": "^[0-9-]{1,9}[0-9]$",
+              "required": false,
+              "regex": "^[0-9-]{1,61}[0-9]$",
               "validationMessage": "Please enter only integer number between [0-9]."
             }
           },
@@ -106,36 +94,19 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "validationMessage": "Please Enter Your Address."
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
+              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
           },
           {
             "name": "Country",
-            "type": "Microsoft.Common.DropDown",
-            "label": "Country",
-            "toolTip": "Please Select your Country name.",
-            "defaultValue": "Please Select Your Country",
-            "constraints": {
-              "allowedValues": [
-                {
-                  "label": "India",
-                  "value": "IN"
-                },
-                {
-                  "label": "USA",
-                  "value": "USA"
-                }
-              ]
-            }
-          },
-          {
-            "name": "Other",
             "type": "Microsoft.Common.TextBox",
             "label": "Country",
             "toolTip": "Enter Your Country Name.",
             "defaultValue": "",
             "constraints": {
               "required": false,
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
           },
@@ -188,10 +159,10 @@
         ]
       },
       {
-        "name": "HMA Services",
-        "label": "HMA Services",
+        "name": "Services",
+        "label": "Services",
         "subLabel": {
-          "preValidation": "HMA Services",
+          "preValidation": "Choose Hanu HMA Services",
           "postValidation": "Done"
         },
         "bladeTitle": "HMA Services",
