@@ -86,7 +86,7 @@
             }
           },
           {
-            "name": "Alternate Number",
+            "name": "AlternateNumber",
             "type": "Microsoft.Common.TextBox",
             "label": "Alternate Number",
             "toolTip": "Enter Your Alternate Contact Number.",
@@ -290,8 +290,10 @@
       "webSiteName": "[steps('Customer').webSiteName]",
       "EmailID": "[steps('Customer').EmailID]",
       "ContactNo": "[steps('Customer').ContactNo]",
+      "AlternateNumber": "[steps('Customer').AlternateNumber]",
       "Address": "[steps('Customer').Address]",
       "Country": "[steps('Customer').Country]",
+      "other": "[steps('Customer').other]",
       "State": "[steps('Customer').State]",
       "City": "[steps('Customer').City]",
       "Zipcode": "[steps('Customer').Zipcode]",
