@@ -113,7 +113,7 @@
             "type": "Microsoft.Common.DropDown",
             "label": "Country",
             "toolTip": "Please Select your Country name.",
-            "defaultValue": "Please Select Your Country",
+            "defaultValue": "India",
             "constraints": {
               "allowedValues": [
                 {
