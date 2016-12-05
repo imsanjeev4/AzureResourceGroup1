@@ -86,13 +86,13 @@
             }
           },
           {
-            "name": "Alternate Contact No",
+            "name": "Alternate Number",
             "type": "Microsoft.Common.TextBox",
-            "label": "Alternate Contact No",
+            "label": "Alternate Number",
             "toolTip": "Enter Your Alternate Contact Number.",
             "defaultValue": "",
             "constraints": {
-              "required": true,
+              "required": false,
               "regex": "^[0-9-]{1,9}[0-9]$",
               "validationMessage": "Please enter only integer number between [0-9]."
             }
