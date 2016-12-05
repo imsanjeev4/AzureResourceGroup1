@@ -21,7 +21,7 @@
     "steps": [
       {
         "name": "Customer",
-        "label": "Customer",
+        "label": "",
         "subLabel": {
           "preValidation": "Customer Details",
           "postValidation": "Done"
@@ -191,7 +191,7 @@
       },
       {
         "name": "HMA Services",
-        "label": "HMA Services",
+        "label": "",
         "subLabel": {
           "preValidation": "HMA Services",
           "postValidation": "Done"
