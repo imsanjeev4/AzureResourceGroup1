@@ -11,7 +11,7 @@
         "osPlatform": "Windows",
         "constraints": {
           "required": false,
-          "regex": ""
+          "regex": "^[A-Z0-9]+((,\\s|-)[A-Z0-9]+)*[A-Z0-9]+$"
         }
       }
 
@@ -189,7 +189,7 @@
       },
       {
         "name": "HMA Services",
-        "label": "",
+        "label": "HMA Services",
         "subLabel": {
           "preValidation": "HMA Services",
           "postValidation": "Done"
