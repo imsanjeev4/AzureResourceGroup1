@@ -11,7 +11,7 @@
         "osPlatform": "Windows",
         "constraints": {
           "required": false,
-          "regex": "^[a-z][-a-z0-9]*$"
+          "regex": "^([\\w+-.%]+@[\\w-.]+\\.[A-Za-z]{2,4},?)+$"
         }
       }
 
