@@ -11,7 +11,7 @@
         "osPlatform": "Windows",
         "constraints": {
           "required": false,
-          "regex": "^[a-z][-a-z0-9]*$"
+          "regex": "(?<=^|,)(\"(?:[^\"]|\"\")*\"|[^,]*)"
         }
       }
 
@@ -21,7 +21,7 @@
         "name": "Customer",
         "label": "Customer",
         "subLabel": {
-          "preValidation": "Customer Details",
+          "preValidation": "Details",
           "postValidation": "Done"
         },
         "bladeTitle": "Customer",
@@ -189,9 +189,9 @@
       },
       {
         "name": "HMAServices",
-        "label": "test",
+        "label": "HMA",
         "subLabel": {
-          "preValidation": "HMA Services",
+          "preValidation": "Services",
           "postValidation": "Done"
         },
         "bladeTitle": "HMA Services",
