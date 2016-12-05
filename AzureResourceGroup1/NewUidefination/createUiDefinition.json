@@ -56,7 +56,7 @@
             "toolTip": "Enter your website full URL that is accessible",
             "defaultValue": "",
             "constraints": {
-              "required": true,
+              "required": false,
               "regex": "^http(s)?://([\\w-]+.)+[\\w-]+(/[\\w- ./?%&=])?$",
               "validationMessage": "Enter Website In Proper Format"
             }
@@ -88,7 +88,7 @@
           {
             "name": "Alternate Contact No",
             "type": "Microsoft.Common.TextBox",
-            "label": "Contact Number",
+            "label": "Alternate Contact No",
             "toolTip": "Enter Your Alternate Contact Number.",
             "defaultValue": "",
             "constraints": {
