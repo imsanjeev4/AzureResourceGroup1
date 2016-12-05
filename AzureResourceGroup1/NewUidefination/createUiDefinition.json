@@ -7,7 +7,7 @@
         "name": "VMName",
         "type": "Microsoft.Common.TextBox",
         "label": "Virtual Machine Name",
-        "toolTip": "Enter Existing VM Name.",
+        "toolTip": "Enter Existing VM Name For Backup.",
         "osPlatform": "Windows",
         "constraints": {
           "required": true,
@@ -21,7 +21,7 @@
         "name": "Customer",
         "label": "Customer",
         "subLabel": {
-          "preValidation": "Enter Customer Information",
+          "preValidation": "Customer Details",
           "postValidation": "Done"
         },
         "bladeTitle": "Customer",
@@ -30,7 +30,7 @@
             "name": "CustomerName",
             "type": "Microsoft.Common.TextBox",
             "label": "Customer Name",
-            "toolTip": "Enter Customer Full Name. Ex. Vikram Pal Singh",
+            "toolTip": "Enter Customer Full Name.",
             "defaultValue": "",
             "constraints": {
               "required": false,
@@ -82,7 +82,7 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^[0-9-]{1,61}[0-9]$",
+              "regex": "^[0-9-]{1,10}[0-9]$",
               "validationMessage": "Please enter only integer number between [0-9]."
             }
           },
@@ -94,12 +94,30 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
-              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+              "validationMessage": "Please Enter Your Address."
             }
           },
           {
             "name": "Country",
+            "type": "Microsoft.Common.DropDown",
+            "label": "Country",
+            "toolTip": "Please Select your Country name.",
+            "defaultValue": "",
+            "constraints": {
+              "allowedValues": [
+                {
+                  "label": "India",
+                  "value": "IN"
+                },
+                {
+                  "label": "USA",
+                  "value": "USA"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Other",
             "type": "Microsoft.Common.TextBox",
             "label": "Country",
             "toolTip": "Enter Your Country Name.",
@@ -159,10 +177,10 @@
         ]
       },
       {
-        "name": "Services",
-        "label": "Services",
+        "name": "HMA Services",
+        "label": "HMA Services",
         "subLabel": {
-          "preValidation": "Choose Hanu HMA Services",
+          "preValidation": "HMA Services",
           "postValidation": "Done"
         },
         "bladeTitle": "HMA Services",
