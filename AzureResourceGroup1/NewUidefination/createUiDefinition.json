@@ -11,7 +11,7 @@
         "osPlatform": "Windows",
         "constraints": {
           "required": true,
-          "regex": "(\\d+)(,\\s*\\d+)*",
+          "regex": "^[A-Z0-9]+((,\\s|-)[A-Z0-9]+)*[A-Z0-9]+$",
           "validationMessage": "Please Enter Existing value with Comma Seperated."
 
         }
