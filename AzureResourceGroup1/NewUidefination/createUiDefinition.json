@@ -11,7 +11,7 @@
         "osPlatform": "Windows",
         "constraints": {
           "required": false,
-          "regex": "^([a-zA-Z][0-9]+,)*[a-zA-Z][0-9]+$",
+          "regex": "^([a-zA-Z0-9]+,)*[a-zA-Z0-9]+$",
           "validationMessage": ""
         }
       }
