@@ -10,7 +10,8 @@
         "toolTip": "Enter Existing VM Name For Backup.",
         "osPlatform": "Windows",
         "constraints": {
-          "required": false
+          "required": false,
+          "regex": "^([a-z]+,)*[a-z]+$"
         }
       }
 
