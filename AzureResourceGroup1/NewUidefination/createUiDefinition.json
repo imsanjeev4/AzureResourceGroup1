@@ -11,7 +11,7 @@
         "osPlatform": "Windows",
         "constraints": {
           "required": false,
-          "regex": "^[a-z][-a-z0-9]*$"
+          "regex": "^[A-Z0-9]+((,\\s|-)[A-Z0-9]+)*[A-Z0-9]+$"
         }
       }
 
@@ -189,13 +189,33 @@
       },
       {
         "name": "HMA Services",
-        "label": "HMA Services",
+        "label": "",
         "subLabel": {
           "preValidation": "HMA Services",
           "postValidation": "Done"
         },
         "bladeTitle": "HMA Services",
         "elements": [
+          {
+            "name": "Backup",
+            "type": "Microsoft.Common.DropDown",
+            "label": "Backup",
+            "toolTip": "",
+
+            "defaultValue": "Yes",
+            "constraints": {
+              "allowedValues": [
+                {
+                  "label": "Yes",
+                  "value": "Yes"
+                },
+                {
+                  "label": "No",
+                  "value": "No"
+                }
+              ]
+            }
+          },
           {
             "name": "Vault",
             "type": "Microsoft.Common.TextBox",
@@ -256,27 +276,8 @@
                 }
               ]
             }
-          },
-          {
-            "name": "Backup",
-            "type": "Microsoft.Common.DropDown",
-            "label": "Backup",
-            "toolTip": "",
-
-            "defaultValue": "Yes",
-            "constraints": {
-              "allowedValues": [
-                {
-                  "label": "Yes",
-                  "value": "Yes"
-                },
-                {
-                  "label": "No",
-                  "value": "No"
-                }
-              ]
-            }
           }
+
         ]
       }
 
