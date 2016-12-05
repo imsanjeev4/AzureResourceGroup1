@@ -171,7 +171,7 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^[0-9-]{1,61}[0-9]$",
+              "regex": "^[0-9-]{1,9}[0-9]$",
               "validationMessage": "Please enter only integer number between [0-9]."
             }
           },
@@ -188,14 +188,34 @@
         ]
       },
       {
-        "name": "HMA Services",
-        "label": "HMA Services",
+        "name": "HMAServices",
+        "label": "test",
         "subLabel": {
           "preValidation": "HMA Services",
           "postValidation": "Done"
         },
         "bladeTitle": "HMA Services",
         "elements": [
+          {
+            "name": "Backup",
+            "type": "Microsoft.Common.DropDown",
+            "label": "Backup",
+            "toolTip": "",
+
+            "defaultValue": "Yes",
+            "constraints": {
+              "allowedValues": [
+                {
+                  "label": "Yes",
+                  "value": "Yes"
+                },
+                {
+                  "label": "No",
+                  "value": "No"
+                }
+              ]
+            }
+          },
           {
             "name": "Vault",
             "type": "Microsoft.Common.TextBox",
@@ -256,27 +276,8 @@
                 }
               ]
             }
-          },
-          {
-            "name": "Backup",
-            "type": "Microsoft.Common.DropDown",
-            "label": "Backup",
-            "toolTip": "",
-
-            "defaultValue": "Yes",
-            "constraints": {
-              "allowedValues": [
-                {
-                  "label": "Yes",
-                  "value": "Yes"
-                },
-                {
-                  "label": "No",
-                  "value": "No"
-                }
-              ]
-            }
           }
+
         ]
       }
 
