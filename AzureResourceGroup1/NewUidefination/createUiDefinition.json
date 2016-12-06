@@ -123,8 +123,8 @@
                   "value": "India"
                 },
                 {
-                  "label": "USA",
-                  "value": "USA"
+                  "label": "US",
+                  "value": "US"
                 }
               ]
             }
@@ -133,7 +133,7 @@
             "name": "Other",
             "type": "Microsoft.Common.TextBox",
             "label": "Other",
-            "toolTip": "Enter Your Country Name.",
+            "toolTip": "Please Enter Your Country Name.",
             "defaultValue": "",
             "constraints": {
               "required": false,
@@ -144,7 +144,7 @@
             "name": "State",
             "type": "Microsoft.Common.TextBox",
             "label": "State",
-            "toolTip": "Enter Your State Name.",
+            "toolTip": "Please Enter Your State Name.",
             "defaultValue": "",
             "constraints": {
               "required": false,
@@ -156,7 +156,7 @@
             "name": "City",
             "type": "Microsoft.Common.TextBox",
             "label": "City",
-            "toolTip": "Enter Your City Name.",
+            "toolTip": "Please Enter Your City Name.",
             "defaultValue": "",
             "constraints": {
               "required": false,
@@ -180,7 +180,7 @@
             "name": "Remark",
             "type": "Microsoft.Common.TextBox",
             "label": "Remarks",
-            "toolTip": "Enter Remarks.",
+            "toolTip": "Please Enter Remarks.",
             "defaultValue": "",
             "constraints": {
               "required": false
@@ -221,7 +221,7 @@
             "name": "Vault",
             "type": "Microsoft.Common.TextBox",
             "label": "Vault Name",
-            "toolTip": "Enter Vault Name.",
+            "toolTip": "Please Enter Vault Name.",
             "defaultValue": "",
             "constraints": {
               "required": false,
@@ -235,7 +235,7 @@
             "name": "Policy",
             "type": "Microsoft.Common.TextBox",
             "label": "Policy Name",
-            "toolTip": "Enter Policy Name.",
+            "toolTip": "Please Enter Policy Name.",
             "defaultValue": "",
             "constraints": {
               "required": false,
