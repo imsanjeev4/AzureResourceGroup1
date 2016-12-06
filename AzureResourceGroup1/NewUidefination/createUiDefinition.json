@@ -35,7 +35,7 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^[a-z0-9-]{1,48}[a-z0-9]$",
+              "regex": "^[a-z0-9-]{0,48}[a-z0-9]$",
               "validationMessage": "Customer should be alphanumeric and upto 50 characters long."
             }
           },
@@ -47,7 +47,7 @@
             "defaultValue": "",
             "constraints": {
               "required": true,
-              "regex": "^[a-z][a-z0-9-]{1,48}[a-z0-9]$",
+              "regex": "^[a-z][a-z0-9-]{0,48}[a-z0-9]$",
               "validationMessage": "Company should be alphanumeric and upto 50 characters long."
             }
           },
