@@ -12,7 +12,7 @@
         "constraints": {
           "required": false,
           "regex": "^([a-z0-9A-Z0-9-]+,)*[a-z0-9A-Z0-9-]+$",
-          "validationMessage": "VM name should be alpha-numeric.For Multiple VM name should comma seperated only."
+          "validationMessage": "VM name should be alpha-numeric.Multiple VM allow with Comma seperated only."
         }
       }
 
