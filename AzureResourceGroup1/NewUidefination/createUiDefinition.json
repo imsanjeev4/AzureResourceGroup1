@@ -35,7 +35,7 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^{1,9}$",
+              "regex": "^[a-z]{1,8}[a-z]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
           },
