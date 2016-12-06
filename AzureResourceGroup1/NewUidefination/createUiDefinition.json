@@ -31,7 +31,7 @@
             "name": "CustomerName",
             "type": "Microsoft.Common.TextBox",
             "label": "Customer Name",
-            "toolTip": "Enter Customer Full Name.",
+            "toolTip": "Please Enter Customer Name.",
             "defaultValue": "",
             "constraints": {
               "required": true,
@@ -132,7 +132,7 @@
           {
             "name": "Other",
             "type": "Microsoft.Common.TextBox",
-            "label": "Country",
+            "label": "Other",
             "toolTip": "Enter Your Country Name.",
             "defaultValue": "",
             "constraints": {
