@@ -229,7 +229,7 @@
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             },
 
-            "visible": "[equals('Yes',steps('HMAServices').Backup)]",
+            "visible": "[equals('Yes',steps('HMAServices').Backup)]"
           },
           {
             "name": "Policy",
