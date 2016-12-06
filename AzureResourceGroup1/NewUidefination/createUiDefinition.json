@@ -203,7 +203,7 @@
             "label": "Backup",
             "toolTip": "",
 
-            "defaultValue": "Yes",
+            "defaultValue": "No",
             "constraints": {
               "allowedValues": [
                 {
