@@ -11,7 +11,7 @@
         "osPlatform": "Windows",
         "constraints": {
           "required": false,
-          "regex": "^([a-z0-9A-Z0-9-]+,)*[a-z0-9A-Z0-9-]+$",
+          "regex": "^([a-z][a-z0-9-][A-Z][A-Z0-9-]+,)*[a-z][a-z0-9-][A-Z][A-Z0-9-]+$",
           "validationMessage": "VM name should be alpha-numeric.Multiple VM allow with Comma seperated only."
         }
       }
@@ -35,7 +35,7 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^([a-z][a-z0-9-][A-Z][A-Z0-9-]+,)*[a-z][a-z0-9-][A-Z][A-Z0-9-]+$",
+              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             }
           },
