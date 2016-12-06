@@ -43,7 +43,7 @@
             "name": "CompanyName",
             "type": "Microsoft.Common.TextBox",
             "label": "Company Name",
-            "toolTip": "Enter Company Full Name. Ex. Hanusoftware Solutions (P). Ltd.",
+            "toolTip": "Please Enter Company Name.",
             "defaultValue": "",
             "constraints": {
               "required": true,
@@ -55,7 +55,7 @@
             "name": "webSiteName",
             "type": "Microsoft.Common.TextBox",
             "label": "Enter Website URL",
-            "toolTip": "Enter your website full URL that is accessible",
+            "toolTip": "Enter your website full URL Address.",
             "defaultValue": "",
             "constraints": {
               "required": false,
