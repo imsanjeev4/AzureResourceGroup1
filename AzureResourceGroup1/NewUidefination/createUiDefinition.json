@@ -12,7 +12,7 @@
         "constraints": {
           "required": true,
           "regex": "^([a-z0-9A-Z0-9-]+,)*[a-z0-9A-Z0-9-]+$",
-          "validationMessage": "VM name should be alpha-numeric & space not allowed.Multiple VM allow with Comma seperated only."
+          "validationMessage": "VM name should be alpha-numeric.Multiple VM allow with Comma seperated only."
         }
       }
 
@@ -43,7 +43,7 @@
             "name": "CompanyName",
             "type": "Microsoft.Common.TextBox",
             "label": "Company Name",
-            "toolTip": "Please Enter Company Name.",
+            "toolTip": "Enter Company Full Name. Ex. Hanusoftware Solutions (P). Ltd.",
             "defaultValue": "",
             "constraints": {
               "required": true,
@@ -55,7 +55,7 @@
             "name": "webSiteName",
             "type": "Microsoft.Common.TextBox",
             "label": "Enter Website URL",
-            "toolTip": "Enter your website full URL Address.",
+            "toolTip": "Enter your website full URL that is accessible",
             "defaultValue": "",
             "constraints": {
               "required": false,
@@ -110,87 +110,21 @@
               "validationMessage": "Please Enter Your Address."
             }
           },
-
           {
             "name": "Country",
             "type": "Microsoft.Common.DropDown",
             "label": "Country",
             "toolTip": "Please Select your Country name.",
-            "defaultValue": "Amsterdam",
+            "defaultValue": "IN",
             "constraints": {
               "allowedValues": [
                 {
-                  "label": "Amsterdam",
-                  "value": "Amsterdam"
+                  "label": "India",
+                  "value": "IN"
                 },
                 {
-                  "label": "California",
-                  "value": "California"
-                },
-                {
-                  "label": "Chicago",
-                  "value": "Chicago"
-                },
-                {
-                  "label": "China",
-                  "value": "China"
-                },
-                {
-                  "label": "Hong Kong",
-                  "value": "Hong Kong"
-                },
-
-                {
-                  "label": "IL",
-                  "value": "IL"
-                },
-                {
-                  "label": "Ireland",
-                  "value": "Ireland"
-                },
-                {
-                  "label": "Iowa",
-                  "value": "Iowa"
-                },
-                {
-                  "label": "Melbourne",
-                  "value": "Melbourne"
-                },
-                {
-                  "label": "Netherlands",
-                  "value": "Netherlands"
-                },
-                {
-                  "label": "Osaka",
-                  "value": "Osaka"
-                },
-                {
-                  "label": "Singapore",
-                  "value": "Singapore"
-                },
-                {
-                  "label": "Saitama",
-                  "value": "Saitama"
-                },
-                {
-                  "label": "San Antonio",
-                  "value": "San Antonio"
-                },
-                {
-                  "label": "São Paulo",
-                  "value": "São Paulo"
-                },
-                {
-                  "label": "Sydney",
-                  "value": "Sydney"
-                },
-                {
-                  "label": "TX",
-                  "value": "TX"
-                },
-                {
-                  "label": "Virginia",
-                  "value": "Virginia"
+                  "label": "USA",
+                  "value": "USA"
                 }
               ]
             }
@@ -199,7 +133,7 @@
             "name": "Other",
             "type": "Microsoft.Common.TextBox",
             "label": "Other",
-            "toolTip": "Please Enter Your Country Name.",
+            "toolTip": "Enter Your Country Name.",
             "defaultValue": "",
             "constraints": {
               "required": false,
@@ -210,7 +144,7 @@
             "name": "State",
             "type": "Microsoft.Common.TextBox",
             "label": "State",
-            "toolTip": "Please Enter Your State Name.",
+            "toolTip": "Enter Your State Name.",
             "defaultValue": "",
             "constraints": {
               "required": false,
@@ -222,7 +156,7 @@
             "name": "City",
             "type": "Microsoft.Common.TextBox",
             "label": "City",
-            "toolTip": "Please Enter Your City Name.",
+            "toolTip": "Enter Your City Name.",
             "defaultValue": "",
             "constraints": {
               "required": false,
@@ -246,7 +180,7 @@
             "name": "Remark",
             "type": "Microsoft.Common.TextBox",
             "label": "Remarks",
-            "toolTip": "Please Enter Remarks.",
+            "toolTip": "Enter Remarks.",
             "defaultValue": "",
             "constraints": {
               "required": false
@@ -269,7 +203,7 @@
             "label": "Backup",
             "toolTip": "",
 
-            "defaultValue": "No",
+            "defaultValue": "Yes",
             "constraints": {
               "allowedValues": [
                 {
@@ -287,28 +221,25 @@
             "name": "Vault",
             "type": "Microsoft.Common.TextBox",
             "label": "Vault Name",
-            "toolTip": "Please Enter Vault Name.",
+            "toolTip": "Enter Vault Name.",
             "defaultValue": "",
             "constraints": {
               "required": false,
               "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
-            },
-
-            "visible": "[equals('Yes',steps('HMAServices').Backup)]"
+            }
           },
           {
             "name": "Policy",
             "type": "Microsoft.Common.TextBox",
             "label": "Policy Name",
-            "toolTip": "Please Enter Policy Name.",
+            "toolTip": "Enter Policy Name.",
             "defaultValue": "",
             "constraints": {
               "required": false,
               "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
-            },
-            "visible": "[equals('Yes',steps('HMAServices').Backup)]"
+            }
           },
           {
             "name": "patch",
