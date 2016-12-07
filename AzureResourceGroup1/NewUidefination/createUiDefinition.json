@@ -43,7 +43,7 @@
             "name": "CompanyName",
             "type": "Microsoft.Common.TextBox",
             "label": "Company Name",
-            "toolTip": "Enter Company Full Name.",
+            "toolTip": "Please Enter Company Name.",
             "defaultValue": "",
             "constraints": {
               "required": true,
@@ -55,7 +55,7 @@
             "name": "webSiteName",
             "type": "Microsoft.Common.TextBox",
             "label": "Enter Website URL",
-            "toolTip": "Enter your website full URL that is accessible",
+            "toolTip": "Enter your website full URL Address.",
             "defaultValue": "",
             "constraints": {
               "required": false,
@@ -110,21 +110,87 @@
               "validationMessage": "Please Enter Your Address."
             }
           },
+
           {
             "name": "Country",
             "type": "Microsoft.Common.DropDown",
             "label": "Country",
             "toolTip": "Please Select your Country name.",
-            "defaultValue": "India",
+            "defaultValue": "Amsterdam",
             "constraints": {
               "allowedValues": [
                 {
-                  "label": "India",
-                  "value": "India"
+                  "label": "Amsterdam",
+                  "value": "Amsterdam"
                 },
                 {
-                  "label": "USA",
-                  "value": "USA"
+                  "label": "California",
+                  "value": "California"
+                },
+                {
+                  "label": "Chicago",
+                  "value": "Chicago"
+                },
+                {
+                  "label": "China",
+                  "value": "China"
+                },
+                {
+                  "label": "Hong Kong",
+                  "value": "Hong Kong"
+                },
+
+                {
+                  "label": "IL",
+                  "value": "IL"
+                },
+                {
+                  "label": "Ireland",
+                  "value": "Ireland"
+                },
+                {
+                  "label": "Iowa",
+                  "value": "Iowa"
+                },
+                {
+                  "label": "Melbourne",
+                  "value": "Melbourne"
+                },
+                {
+                  "label": "Netherlands",
+                  "value": "Netherlands"
+                },
+                {
+                  "label": "Osaka",
+                  "value": "Osaka"
+                },
+                {
+                  "label": "Singapore",
+                  "value": "Singapore"
+                },
+                {
+                  "label": "Saitama",
+                  "value": "Saitama"
+                },
+                {
+                  "label": "San Antonio",
+                  "value": "San Antonio"
+                },
+                {
+                  "label": "São Paulo",
+                  "value": "São Paulo"
+                },
+                {
+                  "label": "Sydney",
+                  "value": "Sydney"
+                },
+                {
+                  "label": "TX",
+                  "value": "TX"
+                },
+                {
+                  "label": "Virginia",
+                  "value": "Virginia"
                 }
               ]
             }
@@ -133,7 +199,7 @@
             "name": "Other",
             "type": "Microsoft.Common.TextBox",
             "label": "Other",
-            "toolTip": "Enter Your Country Name.",
+            "toolTip": "Please Enter Your Country Name.",
             "defaultValue": "",
             "constraints": {
               "required": false,
@@ -144,7 +210,7 @@
             "name": "State",
             "type": "Microsoft.Common.TextBox",
             "label": "State",
-            "toolTip": "Enter Your State Name.",
+            "toolTip": "Please Enter Your State Name.",
             "defaultValue": "",
             "constraints": {
               "required": false,
@@ -156,7 +222,7 @@
             "name": "City",
             "type": "Microsoft.Common.TextBox",
             "label": "City",
-            "toolTip": "Enter Your City Name.",
+            "toolTip": "Please Enter Your City Name.",
             "defaultValue": "",
             "constraints": {
               "required": false,
@@ -180,7 +246,7 @@
             "name": "Remark",
             "type": "Microsoft.Common.TextBox",
             "label": "Remarks",
-            "toolTip": "Enter Remarks.",
+            "toolTip": "Please Enter Remarks.",
             "defaultValue": "",
             "constraints": {
               "required": false
@@ -221,7 +287,7 @@
             "name": "Vault",
             "type": "Microsoft.Common.TextBox",
             "label": "Vault Name",
-            "toolTip": "Enter Vault Name.",
+            "toolTip": "Please Enter Vault Name.",
             "defaultValue": "",
             "constraints": {
               "required": false,
@@ -235,7 +301,7 @@
             "name": "Policy",
             "type": "Microsoft.Common.TextBox",
             "label": "Policy Name",
-            "toolTip": "Enter Policy Name.",
+            "toolTip": "Please Enter Policy Name.",
             "defaultValue": "",
             "constraints": {
               "required": false,
