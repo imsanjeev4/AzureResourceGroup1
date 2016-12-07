@@ -115,16 +115,81 @@
             "type": "Microsoft.Common.DropDown",
             "label": "Country",
             "toolTip": "Please Select your Country name.",
-            "defaultValue": "India",
+            "defaultValue": "Amsterdam",
             "constraints": {
               "allowedValues": [
                 {
-                  "label": "India",
-                  "value": "India"
+                  "label": "Amsterdam",
+                  "value": "Amsterdam"
                 },
                 {
-                  "label": "US",
-                  "value": "US"
+                  "label": "California",
+                  "value": "California"
+                },
+                {
+                  "label": "Chicago",
+                  "value": "Chicago"
+                },
+                {
+                  "label": "China",
+                  "value": "China"
+                },
+                {
+                  "label": "Hong Kong",
+                  "value": "Hong Kong"
+                },
+
+                {
+                  "label": "IL",
+                  "value": "IL"
+                },
+                {
+                  "label": "Ireland",
+                  "value": "Ireland"
+                },
+                {
+                  "label": "Iowa",
+                  "value": "Iowa"
+                },
+                {
+                  "label": "Melbourne",
+                  "value": "Melbourne"
+                },
+                {
+                  "label": "Netherlands",
+                  "value": "Netherlands"
+                },
+                {
+                  "label": "Osaka",
+                  "value": "Osaka"
+                },
+                {
+                  "label": "Singapore",
+                  "value": "Singapore"
+                },
+                {
+                  "label": "Saitama",
+                  "value": "Saitama"
+                },
+                {
+                  "label": "San Antonio",
+                  "value": "San Antonio"
+                },
+                {
+                  "label": "São Paulo",
+                  "value": "São Paulo"
+                },
+                {
+                  "label": "Sydney",
+                  "value": "Sydney"
+                },
+                {
+                  "label": "TX",
+                  "value": "TX"
+                },
+                {
+                  "label": "Virginia",
+                  "value": "Virginia"
                 }
               ]
             }
