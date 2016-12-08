@@ -322,6 +322,7 @@
             },
             "visible": "[equals('No',steps('HMAServices').Backup)]"
           },
+
           {
             "name": "patch",
             "type": "Microsoft.Common.DropDown",
