@@ -213,7 +213,8 @@
               "required": false,
               "regex": "^[0-9A-Za-z ]+$",
               "validationMessage": "Alphanumeric and space allowed only."
-            }
+            },
+            "visible": "[equals('Other',steps('Customer').Country)]"
           },
           {
             "name": "State",
@@ -320,9 +321,8 @@
               "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
               "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
             },
-            "visible": "[equals('No',steps('HMAServices').Backup)]"
+            "visible": "[equals('Yes',steps('HMAServices').Backup)]"
           },
-
           {
             "name": "patch",
             "type": "Microsoft.Common.DropDown",
