@@ -202,6 +202,7 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
+              "regex": "^[0-9A-Za-z ]+$",
               "validationMessage": "Please Enter Your Country Name."
             }
           },
@@ -213,8 +214,8 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
-              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+              "regex": "^[A-Za-z ]+$",
+              "validationMessage": "State name should be alphabetical and space allowed only."
             }
           },
           {
@@ -225,8 +226,8 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^[a-z][a-z0-9-]{1,61}[a-z0-9]$",
-              "validationMessage": "Only alphanumeric characters and hyphen are allowed, and the value must be less than 64 characters long."
+              "regex": "^[0-9A-Za-z ]+$",
+              "validationMessage": "City name should be alphabetical and space allowed only."
             }
           },
           {
@@ -237,8 +238,8 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^[0-9-]{1,9}[0-9]$",
-              "validationMessage": "Please enter only integer number between [0-9]."
+              "regex": "^[0-9A-Za-z]+$",
+              "validationMessage": "Please enter only alphanumeric."
             }
           },
           {
@@ -248,7 +249,10 @@
             "toolTip": "Please Enter Remarks.",
             "defaultValue": "",
             "constraints": {
-              "required": false
+              "required": false,
+              "regex": "^[0-9A-Za-z ]+$",
+              "validationMessage": "Please enter only alphanumeric."
+
             }
           }
         ]
