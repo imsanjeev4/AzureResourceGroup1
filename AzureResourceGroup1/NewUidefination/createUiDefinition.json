@@ -107,6 +107,7 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
+              "regex": "^[0-9-]{1,9}[0-9]$",
               "validationMessage": "Please Enter Your Address."
             }
           },
