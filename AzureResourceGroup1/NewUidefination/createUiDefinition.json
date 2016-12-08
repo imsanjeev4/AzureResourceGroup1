@@ -36,7 +36,7 @@
             "constraints": {
               "required": true,
               "regex": "^[0-9A-Za-z ]+$",
-              "validationMessage": "Customer should be alphanumeric and upto 50 characters long."
+              "validationMessage": "Customer should be alphanumeric and space allowed only."
             }
           },
           {
@@ -107,7 +107,7 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^[0-9-]{1,9}[0-9]$",
+              "regex": "^[0-9A-Za-z ]+$",
               "validationMessage": "Please Enter Your Address."
             }
           },
@@ -120,6 +120,10 @@
             "defaultValue": "Amsterdam",
             "constraints": {
               "allowedValues": [
+                {
+                  "label": "Other",
+                  "value": "Other"
+                },
                 {
                   "label": "Amsterdam",
                   "value": "Amsterdam"
@@ -143,6 +147,10 @@
                 {
                   "label": "IL",
                   "value": "IL"
+                },
+                {
+                  "label": "India",
+                  "value": "India"
                 },
                 {
                   "label": "Ireland",
@@ -204,7 +212,7 @@
             "constraints": {
               "required": false,
               "regex": "^[0-9A-Za-z ]+$",
-              "validationMessage": "Please Enter Your Country Name."
+              "validationMessage": "Alphanumeric and space allowed only."
             }
           },
           {
