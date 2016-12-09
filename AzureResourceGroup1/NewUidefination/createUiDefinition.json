@@ -107,7 +107,7 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^([\\s]*\\d){10}\\s*$",
+              "regex": "^[0-9A-Za-z ]{1,9}[0-9A-Za-z ]$",
               "validationMessage": "Please Enter Your Address."
             }
           },
@@ -248,7 +248,7 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^[0-9A-Za-z]{1,13}[0-9A-Za-z]+$",
+              "regex": "^[0-9A-Za-z]+$",
               "validationMessage": "Please enter only alphanumeric."
             }
           },
