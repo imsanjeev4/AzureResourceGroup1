@@ -107,7 +107,7 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^[0-9A-Za-z ]+$",
+              "regex": "^([\\s]*\\d){10}\\s*$",
               "validationMessage": "Please Enter Your Address."
             }
           },
