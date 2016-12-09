@@ -248,7 +248,7 @@
             "defaultValue": "",
             "constraints": {
               "required": false,
-              "regex": "^[0-9A-Za-z]{1,13}+$",
+              "regex": "^[0-9A-Za-z]{1,13}[0-9A-Za-z]+$",
               "validationMessage": "Please enter only alphanumeric."
             }
           },
